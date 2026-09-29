@@ -1,14 +1,206 @@
-body{
-font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-margin: 0;
-padding: 0;
-}
-h1{
-text-align: center;
-color: #333;
-}
-p{
-text-align: center;
-font-size: 18px;
+/* =========================================
+   BASIC PAGE SETTINGS
+   ========================================= */
 
+/* Remove default spacing and make sizing easier */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling when clicking navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+
+    /* Light background for the whole website */
+    background: #f5f7fb;
+
+    /* Text color */
+    color: #222;
+}
+
+/* =========================================
+   NAVIGATION BAR
+   ========================================= */
+
+nav {
+    /* Keep navigation at the top while scrolling */
+    position: sticky;
+    top: 0;
+
+    /* Put navigation above other elements */
+    z-index: 1000;
+
+    /* Navigation background */
+    background: #111827;
+
+    /* Center the links */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Space around navigation */
+    padding: 18px;
+}
+
+/* Navigation links */
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 18px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    /* Makes hover animation smooth */
+    transition: 0.3s;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* =========================================
+   HERO / HEADER SECTION
+   ========================================= */
+
+header {
+    /* Space inside header */
+    padding: 100px 20px;
+
+    /* Center everything */
+    text-align: center;
+
+    /* Modern gradient background */
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #2563eb
+    );
+
+    color: white;
+}
+
+/* Main heading */
+header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+header p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+main {
+    /* Prevent content from becoming too wide */
+    max-width: 1000px;
+
+    /* Center the content */
+    margin: auto;
+
+    /* Space around content */
+    padding: 50px 20px;
+}
+
+/* =========================================
+   SECTIONS / CARDS
+   ========================================= */
+
+section {
+    background: white;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    /* Soft shadow */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    /* Smooth hover animation */
+    transition: 0.3s;
+}
+
+/* Move card slightly upward when mouse is over it */
+section:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Section headings */
+section h2 {
+    font-size: 28px;
+
+   margin-bottom: 15px;
+
+    color: #2563eb;
+}
+
+/* Section paragraphs */
+section p {
+    font-size: 17px;
+
+    color: #555;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    text-align: center;
+
+    padding: 25px;
+
+    background: #111827;
+
+    color: white;
+
+    margin-top: 30px;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================= */
+
+/* This applies when the screen is smaller */
+@media (max-width: 600px) {
+
+    /* Smaller heading on phones */
+    header h1 {
+        font-size: 36px;
+    }
+
+    /* Make navigation fit small screens */
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /* Smaller section padding */
+    section {
+        padding: 25px;
+    }
+}
