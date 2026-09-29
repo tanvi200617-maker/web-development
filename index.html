@@ -4,113 +4,277 @@
 <head>
     <!-- Tells the browser which character set to use -->
     <meta charset="UTF-8">
-  
-    <!-- Makes the website responsive on phones and tablets -->
+
+    <!-- Makes the website responsive on phones -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <!-- Text shown on the browser tab -->
-    <title>Tanvi | My First Website</title>
 
-    <!-- Connects HTML with our CSS file -->
+    <!-- Text shown in the browser tab -->
+    <title>Tanvi | Developer Portfolio</title>
+
+    <!-- Connects our HTML file with our CSS file -->
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
+    
+    <!-- =====================================
+         NAVIGATION BAR
+         ===================================== -->
 
-  <!-- ===============================
-        NAVIGATION BAR
-       =============================== -->
+     <nav>
+        <!-- Website/portfolio name -->
+        <div class="logo">Tanvi.</div>
 
-  <nav>
-    <!-- Link to Home section -->
-        <a href="#home">Home</a>
+        <!-- Navigation links -->
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-        <!-- Link to About section -->
-        <a href="#about">About</a>
-
-        <!-- Link to Skills section -->
-        <a href="#skills">Skills</a>
-
-        <!-- Link to Projects section -->
-        <a href="#projects">Projects</a>
-
-        <!-- Link to Contact section -->
-        <a href="#contact">Contact</a>
-  </nav>
-
-    <!-- ==============================
-         HEADER / INTRODUCTION
-         ============================== -->
+    <!-- =====================================
+         HERO SECTION
+         This is the first thing visitors see.
+         ===================================== -->
 
     <header id="home">
 
-        <h1>Hi, I'm Tanvi</h1>
+        <div class="hero-content">
 
-        <p>Student | Developer | Learner</p>
+            <!-- Small introduction -->
+            <p class="hero-small-text">
+                HELLO, I'M
+            </p>
 
+            <!-- Main heading -->
+            <h1>Tanvi</h1>
+
+            <!-- Short description -->
+            <h2>
+                Student Developer & Tech Enthusiast
+            </h2>
+
+            <p class="hero-description">
+                I'm learning, building and exploring technology
+                through projects and new challenges.
+            </p>
+
+            <!-- Buttons -->
+            <div class="hero-buttons">
+
+                <a href="#projects" class="button primary-button">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="button secondary-button">
+                    Contact Me
+                </a>
+            </div>
+        </div>
     </header>
 
-    <!-- ==============================
+    <!-- =====================================
          MAIN CONTENT
-         ============================== -->
+         ===================================== -->
 
     <main>
 
-        <!-- ABOUT ME SECTION -->
-        <section id="about">
+        <!-- =====================================
+             ABOUT SECTION
+             ===================================== -->
 
-            <h2>About Me</h2>
+        <section id="about" class="content-section">
+
+            <p class="section-label">
+                ABOUT ME
+            </p>
+
+            <h2>Turning curiosity into projects.</h2>
 
             <p>
-                Hello! I am Tanvi.
-                I am learning web development and
-                building projects to improve my skills.
+
+I am a passionate and curious technology student pursuing my studies at World College of Technology and Management. 
+I enjoy exploring technology, learning new skills, and turning ideas into practical projects. My current interests
+include web development,Python, SQL, machine learning, and creative digital design. I believe in continuously 
+improving my skills through hands-on learning and experimentation.
+            </p>
+            <p>
+                Along with academics, I actively participate in the college tech community. I am a Core Team Member of AWS Campus Ambassador
+                and a Community Member of The Codex Society, where I get opportunities to collaborate with other students, work on technology-related activities, 
+                and contribute to college events and initiatives. These experiences have helped me develop teamwork, communication, leadership, and problem-solving skills.
+            </p>
+            <p>
+                I am always excited to learn, build, and take on new challenges. My goal is to grow as a technology professional by creating meaningful projects,
+                strengthening my technical skills, and working with people who share the same passion for innovation. I believe every project and experience is an 
+                opportunity to learn something new, and I am looking forward to building a strong portfolio that reflects my growth and creativity.
             </p>
 
         </section>
-        <!-- SKILLS SECTION -->
-        <section id="skills">
 
-            <h2>My Skills</h2>
+        <!-- ====================================
+             SKILLS SECTION
+             ===================================== -->
 
-            <p>
-                HTML | CSS | JavaScript
+        <section id="skills" class="content-section">
+
+            <p class="section-label">
+                MY SKILLS
             </p>
 
+            <h2>Technologies I'm learning</h2>
+
+
+            <!-- Skill cards -->
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <span>01</span>
+                    <h3>HTML</h3>
+                    <p>
+                        Building the structure of websites.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <span>02</span>
+                    <h3>CSS</h3>
+                    <p>
+                        Designing attractive and responsive websites.
+                    </p>
+                </div>
+
+
+                <div class="skill-card">
+                    <span>03</span>
+                    <h3>JavaScript</h3>
+                    <p>
+                        Adding interaction and functionality.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <span>04</span>
+                    <h3>Python</h3>
+                    <p>
+                        Learning programming and problem solving.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <span>05</span>
+                    <h3>SQL</h3>
+                    <p>
+                        Learning databases and data management.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <span>06</span>
+                    <h3>Git & GitHub</h3>
+                    <p>
+                        Managing and sharing development projects.
+                    </p>
+                </div>
+            </div>
         </section>
-    
-        <!-- PROJECTS SECTION -->
-        <section id="projects">
 
-            <h2>My Projects</h2>
+        <!-- =====================================
+             PROJECTS SECTION
+             ===================================== -->
 
-            <p>
-                My web development projects will appear here.
+        <section id="projects" class="content-section">
+
+            <p class="section-label">
+                PROJECTS
             </p>
 
+            <h2>Things I'm building</h2>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+
+                    <p class="project-number">
+                        01
+                    </p>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A responsive personal website built using
+                        HTML and CSS while learning web development.
+                    </p>
+
+                    <span class="project-tech">
+                        HTML · CSS · GitHub Pages
+                    </span>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+
+                    <p class="project-number">
+                        02
+                    </p>
+
+                    <h3>Coming Soon</h3>
+
+                    <p>
+                        A new project I'm currently learning and
+                        building.
+                    </p>
+
+                    <span class="project-tech">
+                        Learning · Building · Exploring
+                    </span>
+                </div>
+            </div>
         </section>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact">
+        <!-- =====================================
+             CONTACT SECTION
+             ===================================== -->
 
-            <h2>Contact Me</h2>
+        <section id="contact" class="contact-section">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>Let's connect.</h2>
 
             <p>
-                You can contact me through my social profiles.
+                I'm always interested in learning, building and
+                connecting with people interested in technology.
             </p>
+
+            <!-- Email link -->
+            <a
+                href="tanvi200617@gmail.com"
+                class="button primary-button"
+            >
+                Send Me an Email
+            </a>
 
         </section>
 
     </main>
 
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
 
-    <!-- FOOTER -->
     <footer>
 
-        <p>© 2026 Tanvi. All rights reserved.</p>
+        <p>
+            © 2026 Tanvi. Built while learning web development.
+        </p>
 
     </footer>
 
 </body>
-
 </html>
