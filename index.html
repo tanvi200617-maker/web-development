@@ -2,279 +2,396 @@
 <html lang="en">
 
 <head>
-    <!-- Tells the browser which character set to use -->
+    <!-- Allows the browser to correctly display text -->
     <meta charset="UTF-8">
 
-    <!-- Makes the website responsive on phones -->
+    <!-- Makes the website responsive on phones/tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Text shown in the browser tab -->
+    <!-- Text shown on the browser tab -->
     <title>Tanvi | Developer Portfolio</title>
 
-    <!-- Connects our HTML file with our CSS file -->
+    <!-- Connect HTML with our CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
-    <!-- =====================================
-         NAVIGATION BAR
-         ===================================== -->
 
-     <nav>
-        <!-- Website/portfolio name -->
-        <div class="logo">Tanvi.</div>
+    <!-- =========================================
+         NAVIGATION
+         ========================================= -->
 
-        <!-- Navigation links -->
+    <nav class="navbar">
+
+        <!-- Developer name / logo -->
+        <a href="#home" class="logo">Tanvi.</a>
+
+        <!-- Website navigation -->
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </div>
+
     </nav>
 
-    <!-- =====================================
-         HERO SECTION
-         This is the first thing visitors see.
-         ===================================== -->
 
-    <header id="home">
+    <!-- =========================================
+         HERO / INTRODUCTION
+         ========================================= -->
+
+    <header id="home" class="hero">
 
         <div class="hero-content">
 
             <!-- Small introduction -->
-            <p class="hero-small-text">
-                HELLO, I'M
+            <p class="eyebrow">
+                STUDENT DEVELOPER
             </p>
 
             <!-- Main heading -->
-            <h1>Tanvi</h1>
+            <h1>
+                Building ideas<br>
+                with <span>technology.</span>
+            </h1>
 
-            <!-- Short description -->
-            <h2>
-                Student Developer & Tech Enthusiast
-            </h2>
-
-            <p class="hero-description">
-                I'm learning, building and exploring technology
-                through projects and new challenges.
+            <!-- Short introduction -->
+            <p class="hero-text">
+          I'm Tanvi, a student developer exploring web development,
+                programming and technology through projects and continuous learning.  
             </p>
-
-            <!-- Buttons -->
+                
+            <!-- Main actions -->
             <div class="hero-buttons">
 
                 <a href="#projects" class="button primary-button">
-                    View My Projects
+                    View Projects
                 </a>
 
                 <a href="#contact" class="button secondary-button">
                     Contact Me
                 </a>
+
             </div>
+
         </div>
+
     </header>
 
-    <!-- =====================================
+
+    <!-- =========================================
          MAIN CONTENT
-         ===================================== -->
+         ========================================= -->
 
     <main>
 
-        <!-- =====================================
-             ABOUT SECTION
-             ===================================== -->
 
-        <section id="about" class="content-section">
+        <!-- =========================================
+             ABOUT
+             ========================================= -->
 
-            <p class="section-label">
-                ABOUT ME
-            </p>
+        <section id="about" class="section">
 
-            <h2>Turning curiosity into projects.</h2>
+            <div class="section-heading">
 
-            <p>
+                <p class="section-number">01</p>
 
-I am a passionate and curious technology student pursuing my studies at World College of Technology and Management. 
-I enjoy exploring technology, learning new skills, and turning ideas into practical projects. My current interests
-include web development,Python, SQL, machine learning, and creative digital design. I believe in continuously 
-improving my skills through hands-on learning and experimentation.
-            </p>
-            <p>
-                Along with academics, I actively participate in the college tech community. I am a Core Team Member of AWS Campus Ambassador
-                and a Community Member of The Codex Society, where I get opportunities to collaborate with other students, work on technology-related activities, 
-                and contribute to college events and initiatives. These experiences have helped me develop teamwork, communication, leadership, and problem-solving skills.
-            </p>
-            <p>
-                I am always excited to learn, build, and take on new challenges. My goal is to grow as a technology professional by creating meaningful projects,
-                strengthening my technical skills, and working with people who share the same passion for innovation. I believe every project and experience is an 
-                opportunity to learn something new, and I am looking forward to building a strong portfolio that reflects my growth and creativity.
-            </p>
+                <h2>About Me</h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>
+               I am a passionate and curious technology student at World College of Technology and Management** with a strong interest in exploring 
+               how technology can be used to solve real-world problems. I enjoy learning new technologies, experimenting with different tools, and turning 
+               ideas into practical and creative projects. My areas of interest include **web development, Python, SQL, machine learning, and digital design.
+               I believe that technology is not just about writing code, but also about understanding problems, finding effective solutions, and creating experiences that are useful and meaningful.
+
+                </p>
+                <p>
+                 Beyond academics, I actively participate in my college's technology community. I am a Core Team Member of AWS Campus Ambassador
+                 and a **Community Member of The Codex Society**. Through these experiences, I get opportunities to collaborate with other students, 
+                 participate in technical activities, contribute to college events, and explore new ideas. Working with different people has helped me improve my 
+                 teamwork, communication, leadership, creativity, and problem-solving skills** while giving me practical experience outside the classroom.
+
+                </p>
+                 <p>
+                 I am someone who enjoys learning by doing. Whether I am developing a website, exploring a programming concept, working with data, or experimenting 
+                 with a new design, I like understanding how things work and finding ways to make them better. I am continuously working on improving my technical
+                 and creative skills through projects, practice, and new experiences. I believe that every project, challenge, and collaboration is an opportunity to
+                 learn something new, and I look forward to building more innovative and meaningful work as I continue my journey in technology.
+    
+                 </p>
+            </div>
 
         </section>
 
-        <!-- ====================================
-             SKILLS SECTION
-             ===================================== -->
 
-        <section id="skills" class="content-section">
+        <!-- =========================================
+             SKILLS / TECH STACK
+             ========================================= -->
 
-            <p class="section-label">
-                MY SKILLS
-            </p>
+        <section id="skills" class="section">
 
-            <h2>Technologies I'm learning</h2>
+            <div class="section-heading">
+
+                <p class="section-number">02</p>
+
+                <h2>Tech Stack</h2>
+
+            </div>
 
 
-            <!-- Skill cards -->
-            <div class="skills-grid">
-                
-                <div class="skill-card">
+            <div class="tech-list">
+
+                <div class="tech-item">
                     <span>01</span>
                     <h3>HTML</h3>
-                    <p>
-                        Building the structure of websites.
-                    </p>
+                    <p>Web structure & semantics</p>
                 </div>
 
-                <div class="skill-card">
+                <div class="tech-item">
                     <span>02</span>
                     <h3>CSS</h3>
-                    <p>
-                        Designing attractive and responsive websites.
-                    </p>
+                    <p>Responsive design & styling</p>
                 </div>
 
-
-                <div class="skill-card">
+                <div class="tech-item">
                     <span>03</span>
                     <h3>JavaScript</h3>
-                    <p>
-                        Adding interaction and functionality.
-                    </p>
+                    <p>Web interaction & functionality</p>
                 </div>
-                
-                <div class="skill-card">
+
+                <div class="tech-item">
                     <span>04</span>
                     <h3>Python</h3>
-                    <p>
-                        Learning programming and problem solving.
-                    </p>
+                    <p>Programming & problem solving</p>
                 </div>
-                
-                <div class="skill-card">
+
+                <div class="tech-item">
                     <span>05</span>
                     <h3>SQL</h3>
-                    <p>
-                        Learning databases and data management.
-                    </p>
+                    <p>Database fundamentals</p>
                 </div>
-                
-                <div class="skill-card">
+
+                <div class="tech-item">
                     <span>06</span>
                     <h3>Git & GitHub</h3>
-                    <p>
-                        Managing and sharing development projects.
-                    </p>
+                    <p>Version control & collaboration</p>
                 </div>
+
             </div>
+
         </section>
 
-        <!-- =====================================
-             PROJECTS SECTION
-             ===================================== -->
 
-        <section id="projects" class="content-section">
+        <!-- =========================================
+             PROJECTS
+             ========================================= -->
 
-            <p class="section-label">
-                PROJECTS
-            </p>
+        <section id="projects" class="section">
 
-            <h2>Things I'm building</h2>
+            <div class="section-heading">
 
-            <div class="projects-grid">
+                <p class="section-number">03</p>
 
-                <!-- Project 1 -->
-                <div class="project-card">
+                <h2>Selected Projects</h2>
 
-                    <p class="project-number">
+            </div>
+
+
+            <div class="project-list">
+
+                <!-- Project 01 -->
+
+                <article class="project">
+
+                    <div class="project-info">
+
+                        <p class="project-number">
+                            PROJECT 01
+                        </p>
+
+                        <h3>Developer Portfolio</h3>
+
+                        <p>
+                            A responsive personal developer portfolio
+                            built while learning modern web development.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>GitHub Pages</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-arrow">
+                        →
+                    </div>
+
+                </article>
+
+
+                <!-- Project 02 -->
+
+                <article class="project">
+
+                    <div class="project-info">
+
+                        <p class="project-number">
+                            PROJECT 02
+                        </p>
+
+                        <h3>Coming Soon</h3>
+
+                        <p>
+                            An upcoming project focused on building
+                            interactive web experiences with JavaScript.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>Web Development</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-arrow">
+                        →
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             EXPERIENCE & ACTIVITIES
+             ========================================= -->
+
+        <section id="experience" class="section">
+
+            <div class="section-heading">
+
+                <p class="section-number">04</p>
+
+                <h2>Experience & Activities</h2>
+
+            </div>
+
+
+            <div class="experience-list">
+
+                <!-- AWS -->
+
+                <div class="experience-item">
+
+                    <div class="experience-date">
                         01
-                    </p>
+                    </div>
 
-                    <h3>Personal Portfolio</h3>
+                    <div>
 
-                    <p>
-                        A responsive personal website built using
-                        HTML and CSS while learning web development.
-                    </p>
+                        <h3>AWS Campus Ambassador</h3>
 
-                    <span class="project-tech">
-                        HTML · CSS · GitHub Pages
-                    </span>
+                        <p class="role">
+                            Core Team Member
+                        </p>
+
+                        <p>
+                            Contributing to campus technology activities
+                            and helping build awareness around cloud
+                            computing and AWS technologies.
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
 
-                    <p class="project-number">
+                <!-- Codex -->
+
+                <div class="experience-item">
+
+                    <div class="experience-date">
                         02
-                    </p>
+                    </div>
 
-                    <h3>Coming Soon</h3>
+                    <div>
 
-                    <p>
-                        A new project I'm currently learning and
-                        building.
-                    </p>
+                        <h3>The Codex Society</h3>
 
-                    <span class="project-tech">
-                        Learning · Building · Exploring
-                    </span>
+                        <p class="role">
+                            Community Member
+                        </p>
+
+                        <p>
+                            Participating in a student technology
+                            community focused on learning, collaboration
+                            and technical activities.
+                        </p>
+
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
 
-        <!-- =====================================
-             CONTACT SECTION
-             ===================================== -->
+
+        <!-- =========================================
+             CONTACT
+             ========================================= -->
 
         <section id="contact" class="contact-section">
 
-            <p class="section-label">
-                CONTACT
-            </p>
+            <p class="section-number">05</p>
 
-            <h2>Let's connect.</h2>
+            <h2>Let's build something.</h2>
 
             <p>
-                I'm always interested in learning, building and
-                connecting with people interested in technology.
+                I'm always interested in learning new technologies,
+                working on projects and connecting with other students
+                interested in technology.
             </p>
 
-            <!-- Email link -->
+            <!-- Replace this email with the email
+                 you want publicly displayed -->
+
             <a
-                href="tanvi200617@gmail.com"
+                href="mailto:tanvi200617@gmail.com"
                 class="button primary-button"
             >
-                Send Me an Email
+                Get In Touch
             </a>
 
         </section>
 
     </main>
 
-    <!-- =====================================
+
+    <!-- =========================================
          FOOTER
-         ===================================== -->
+         ========================================= -->
 
     <footer>
 
         <p>
-            © 2026 Tanvi. Built while learning web development.
+            © 2026 Tanvi. Built with HTML & CSS.
         </p>
 
     </footer>
 
 </body>
+
 </html>
